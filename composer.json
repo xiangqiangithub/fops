@@ -1,0 +1,33 @@
+{
+    "name": "king/fopsdk",
+    "description": "太保 fop SDK",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "ext-SimpleXML": "*",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-intl": "*",
+        "doctrine/collections": "^1.5",
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/dependency-injection": "^4.1",
+        "symfony/http-foundation": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "fop\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "fop\\Think\\FopService"
+            ]
+        }
+    }
+}
